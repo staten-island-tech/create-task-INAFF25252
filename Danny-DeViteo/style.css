@@ -1,0 +1,206 @@
+:root {
+  --main: #c01a1a;
+  --white:#ffffff;
+  --black:#000000;
+  --light-yellow: #e9af43;
+  --dark-yellow: #23211c;
+  --light-red: #f8baba;
+  --dark-red: #9b1818;
+  --light-blue:#8badd8;
+  --blue:#413f86;
+  --gray: #252c30;
+  --primary: var(--main);
+  --secondary: var(--white);
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
+  --primary: var(--light-yellow);
+  --secondary: var(--dark-yellow);
+  --primary: var(--light-blue);
+  --secondary: var(--blue);
+  /*Typography */
+  --h1: 4.5rem;
+  --h2: 2.2rem;
+  --h3: 1.8rem;
+  --h4: 1.5rem;
+  --h5: 1rem;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.maintheme{
+  --primary: var(--main);
+  --secondary: var(--white);
+  --text: var(--black);
+  --text2: var(--white);
+}
+
+.main{
+  background-color: var(--primary);
+}
+.heading{
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-height: 20%;
+  width: auto;
+  justify-content: center;
+}
+
+body {
+  background-color:var(--primary);
+  background-color:var(--secondary);
+  margin: 0;
+  place-items: center;
+  transition:.2s ease-in;
+}
+
+form{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+button{
+  color: var(--text);
+  text-align: center;
+  margin:1%;
+  display: inline-block;
+  align-items: center;
+  border-radius: .2rem;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-size: var(--h5);
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: var(--secondary);
+}
+
+.error{
+  text-align: center;
+  margin:2%;
+  display: inline-block;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  font-size: var(--h2);
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: var(--secondary);
+}
+
+#submit, .search, .search_pokemon{
+  height:5%;
+  color: var(--text);
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: var(--h5);
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: var(--secondary);
+}
+
+button:hover {
+  border-color: var(--text);
+}
+
+button:focus, button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.flex-container{
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+  background-color: var(--secondary);
+}
+
+footer{
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  width:100%;
+  bottom:0px;
+  text-align: center;
+  background-color: var(--secondary);
+}
+
+.card{
+  background-color: var(--secondary);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition:.2s ease-in;
+  position: relative;
+  width: 20%;
+  height: auto;
+  text-align: center;
+}
+
+.card-img{
+  display: block;
+  width: 100%;
+}
+
+h1{
+  color: var(--text);
+  text-align:center;
+  font-size:var(--h1);
+  background-color:var(--secondary);;
+  margin-top:0;
+}
+
+h2{
+  font-size:var(--h2);
+  text-align:center;
+}
+
+h3{
+  font-size:var(--h3);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .card{
+          width:40%;
+      }
+      
+  }
+  @media screen and (max-width: 800px) {
+      .card{
+          width:100%;
+      }
+  }
+  
