@@ -1,5 +1,5 @@
 :root {
-  --main: #c01a1a;
+  --main: #ffffff;
   --white:#ffffff;
   --black:#000000;
   --light-yellow: #e9af43;
@@ -31,8 +31,8 @@ html {
 }
 
 .maintheme{
-  --primary: var(--main);
-  --secondary: var(--white);
+  --primary: var(--white);
+  --secondary: var(--black);
   --text: var(--black);
   --text2: var(--white);
 }
