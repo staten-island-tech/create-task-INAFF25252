@@ -2,6 +2,7 @@ import '/style.css'
 import { DOMSelectors } from './Dom';
 console.log(DOMSelectors);
 
+const url = "https://cat-fact.herokuapp.com"
 const hist = []
 function search(){
     DOMSelectors.search.addEventListener("submit", function(event){
