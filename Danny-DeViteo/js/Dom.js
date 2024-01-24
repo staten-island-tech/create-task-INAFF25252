@@ -5,7 +5,7 @@ const DOMSelectors = {
     form: document.querySelector(".Main"),
     logo:document.querySelector(".logo"),
     buttonFlip: document.querySelector("footer"),
-    input: document.querySelector("#pokemon"),
+    input: document.querySelector("#test"),
     h1:document.querySelectorAll("h1"),
     h2: document.querySelectorAll(".name"),
     h3:document.querySelectorAll(".type"),

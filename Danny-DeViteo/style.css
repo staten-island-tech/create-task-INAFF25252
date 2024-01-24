@@ -97,7 +97,7 @@ button{
   background-color: var(--secondary);
 }
 
-#submit, .search, .search_pokemon{
+#submit, .search{
   height:5%;
   color: var(--text);
   text-align: center;
