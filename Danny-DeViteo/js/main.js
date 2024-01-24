@@ -2,6 +2,7 @@ import '/style.css'
 import { DOMSelectors } from './Dom';
 console.log(DOMSelectors);
 const hist = []
+const final=[]
 const Questions = [
   {
     id: 1,
@@ -79,6 +80,15 @@ const Questions = [
       for(const question of hist){
         console.log(`${hist}`)
         const answer = prompt("Enter your Answer:")
-       check(answer, question.answer, question.id, question.question, question.answer);
+        if(Number(answer) === correct){
+          console.log("Correct!")
+        }else{
+          console.log("Incorrect try again")
+          final.push(question.question)
+          console.log(final)
+      }
+      }
+      if(final.length >= 3){
+      console.log("You are Dumber than an Infant")
       }
     }
