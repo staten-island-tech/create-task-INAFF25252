@@ -71,7 +71,8 @@ const Questions = [
 
     for(const question of Questions){ //loops through an iterable object
       console.log(`${question.question}`);
-      const answer = prompt("Enter your Answer:")
+      DOMSelectors.gallery.innerHTML = `${question.question}`
+      const answer = prompt("Answer")
       check(answer, question.answer, question.id);
     }
     
