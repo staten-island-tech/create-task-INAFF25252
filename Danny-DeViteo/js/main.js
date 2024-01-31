@@ -1,4 +1,6 @@
 import '/style.css'
+import { DOMSelectors } from './Dom';
+console.log(DOMSelectors);
 const hist = []
 const Questions = [
   {
@@ -56,24 +58,27 @@ const Questions = [
 
 
     function check(answer, correct, w){
-      for(let i=1; i<=2; i++){
         if(Number(answer) === correct){
           console.log("Correct!")
-          console.log("Next Question")
-        }}
+        }
         if(Number(answer) !=correct){
-          console.log("Incorrect")
-          console.log("Next Question")
+          console.log("Incorrect try again")
           hist.push(w)
           console.log(hist)
       }
     }
-
-    for(const question of Questions){
+  
+function main(){
+  
+    for(const question of Questions){ //loops through an iterable object
       console.log(`${question.question}`);
+      //DOMSelectors.gallery.innerHTML += question.question + "<br>"
       const answer = prompt("Answer")
+      //const answer = DOMSelectors.input.value;
       check(answer, question.answer, question.id);
     }
+  }
+  main();
     
     if(hist.length >= 3){
       console.log("You are Dumber than an Infant")
