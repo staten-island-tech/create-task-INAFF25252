@@ -53,33 +53,29 @@ const Questions = [
 
 ];
 
-
-    function check(answer, correct, w){
-        if(Number(answer) === correct){
-          console.log("Correct!")
-        }
-        if(Number(answer) !=correct){
-          console.log("Incorrect try again")
-          hist.push(w)
-          console.log(hist)
-      }
+  function check(answer, correct, w){
+    if(Number(answer) === correct){
+      console.log("Correct!")
     }
-  
-function main(){
-  
-    for(const question of Questions){ //loops through an iterable object
-      console.log(`${question.question}`);
-      //DOMSelectors.gallery.innerHTML += question.question + "<br>"
-      const answer = prompt("Answer")
-      //const answer = DOMSelectors.input.value;
-      check(answer, question.answer, question.id);
+    if(Number(answer) !=correct){
+      console.log("Incorrect try again")
+      hist.push(w)
+      console.log(hist)
     }
   }
-  main();
+  
+function main(){
+  for(const question of Questions){
+    console.log(`${question.question}`);
+    const answer = prompt("Answer")
+    check(answer, question.answer, question.id);
+  }
+}
+main();
     
-    if(hist.length >= 3){
-      console.log("You are Dumber than an Infant")
-    }else{
-      console.log("UGHHH Fine You aren't a Dum Dum")
-    }
+if(hist.length >= 3){
+  console.log("You are Dumber than an Infant")
+}else{
+  console.log("UGHHH Fine You aren't a Dum Dum")
+}
   
